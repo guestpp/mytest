@@ -1,0 +1,28 @@
+package time;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+//
+public class TimeTransfer {
+
+	
+	public static void main(String args[]) throws ParseException{
+		//Mon Jun 06 10:11:28 2016
+//		SimpleDateFormat fmt = new SimpleDateFormat("EEE MMM dd HH:mm:ss");
+//		
+//		String datestr = fmt.format(fmt.parse("Mon Jun 06 10:11:28 2016"));
+//		
+//		System.out.println(datestr);
+		
+		Date d = new Date();
+		d.getTime();
+		
+		System.out.println(d.getTime());
+		
+		//1473651657071
+		Date dd = new Date(1473651657071l);
+		
+		System.out.println(dd);
+	}
+}
